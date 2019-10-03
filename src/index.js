@@ -22,5 +22,21 @@ module.exports = function multiply(first, second) {
         };
     };
   };
- 
+  
+  
+  // some manipulations with temp
+  // there must be one digit left in the temp cell,
+  // dozens and other orders are moved one position higher on the temp
+
+  for (var i = 0; i < temp.length; i++) {
+    var num = temp[i] % 10;              // get digit
+    var move = Math.floor(temp[i] / 10); // move up digit
+    temp[i] = num;                       // last digit upper
+
+    if (temp[i + 1])                     // move up higher orders
+      temp[i + 1] += move;
+    else if (move != 0)
+      temp[i + 1] = move;  
+  };
+
 }
