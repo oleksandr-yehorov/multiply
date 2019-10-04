@@ -39,7 +39,7 @@ module.exports = function multiply(first, second) {
       temp[i + 1] = move;  
   };
 
-  // result
+  // multiply result
 
   return temp.reverse().join('');
 }
