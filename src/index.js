@@ -23,7 +23,6 @@ module.exports = function multiply(first, second) {
     };
   };
   
-  
   // some manipulations with temp
   // there must be one digit left in the temp cell,
   // dozens and other orders are moved one position higher on the temp
